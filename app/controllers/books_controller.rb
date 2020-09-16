@@ -7,12 +7,16 @@ class BooksController < ApplicationController
   end
 
   def show
-    @list = List.find(params[:])
+    @book = Book.find(params[:id])
   end
 
   def new
   end
 
   def edit
+    @book = Book.find(params[:id])
   end
+  
+  def create
+    
 end

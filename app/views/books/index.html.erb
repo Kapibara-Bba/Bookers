@@ -16,9 +16,9 @@
       <% @books.each do |book| %>
         <span><%= book.body %></span>
         <div class="sidebtn">
-          <%= link_to "Show", show_path(@book.id) %>
-          <%= link_to "Edit", edit_path(@book.id) %>
-          <%= link_to "Destroy" destroy_path(@book.id), method: :delete %>
+          <%= link_to "Show", show_book_path(@book.id) %>
+          <%= link_to "Edit", edit_book_path(@book.id) %>
+          <%= link_to "Destroy" destroy_bookpath(@book.id), method: :delete %>
         </div>
       <% end %>
     </div>
