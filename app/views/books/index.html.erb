@@ -6,13 +6,22 @@
     <h3 class="title">Title</h3>
     <div class="title-name">
       <% @books.each do |book| %>
-      <div class="title-item">
-        <p class="book-date"><%= book.created_at %></p>
-      </div>
+        <span><%= book.title %></span>
+      <% end %>
     </div>
   </section>
   <section class="body-box">
     <h3 class="body">Body</h3>
-    
+    <div class="body-text">
+      <% @books.each do |book| %>
+        <span><%= book.body %></span>
+        <div class="sidebtn">
+          <%= link_to "Show", show_path(@book.id) %>
+          <%= link_to "Edit", edit_path(@book.id) %>
+          <%= link_to "Destroy" destroy_path(@book.id), method: :delete %>
+        </div>
+      <% end %>
+    </div>
   </section>
+
 </main>
