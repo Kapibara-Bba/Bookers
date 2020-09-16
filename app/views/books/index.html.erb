@@ -1,2 +1,18 @@
-<h1>Books#index</h1>
-<p>Find me in app/views/books/index.html.erb</p>
+<header>
+  <h1 class="headline">Bookers</h1>
+</header>
+<main>
+  <section class="title-headline">
+    <h3 class="title">Title</h3>
+    <div class="title-name">
+      <% @books.each do |book| %>
+      <div class="title-item">
+        <p class="book-date"><%= book.created_at %></p>
+      </div>
+    </div>
+  </section>
+  <section class="body-box">
+    <h3 class="body">Body</h3>
+    
+  </section>
+</main>
