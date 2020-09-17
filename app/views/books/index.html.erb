@@ -18,7 +18,7 @@
         <div class="sidebtn">
           <%= link_to "Show", show_book_path(@book.id) %>
           <%= link_to "Edit", edit_book_path(@book.id) %>
-          <%= link_to "Destroy" destroy_book_path(@book.id), method: :delete %>
+          <%= link_to "Destroy", destroy_book_path(@book.id), method: :delete %>
         </div>
       <% end %>
     </div>
@@ -26,12 +26,12 @@
 
 </main>
 <div class="new">
-<%= from_with model:@book, local:true do |f| %>
+<%= form_with model:@book, local:true do |f| %>
   <h2>New Book</h2>
   <h4>Title</h4>
   <%= f.text_field :title %>
   <h4>Body</h4>
   <%= f.text_area :body %>
   <%= f.submit 'Create Book' %>
-<% end 
+<% end %>
 </div>
