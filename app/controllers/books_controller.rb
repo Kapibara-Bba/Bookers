@@ -21,7 +21,7 @@ class BooksController < ApplicationController
   def create
     book = Book.new(book_params)
     book.save
-    redirect_to books_path
+    redirect_to show_path
   end
 
   def update

@@ -38,14 +38,17 @@ body {
   color: gray;
 }
 
+table {
+  width: 100%;
+}
+
 thead {
   display: table-header-group;
 }
 
 th {
-  padding-bottom:5px;
+  padding:0 50px 5px 33px;
 }
-
 
 .title-box {
   margin-bottom:10px;
