@@ -19,6 +19,15 @@ class BooksController < ApplicationController
   end
   
   def create
+    book = Book.new(book_params)
+    book.save
+    redirect_to show_path(book.id)
+  end
+  
+  def update
+    book = Book.find(params[:id])
+    book.update(book_params)
+    redirect_to show_path(book.id)
   end
   
   private
