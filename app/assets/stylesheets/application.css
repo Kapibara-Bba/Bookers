@@ -19,7 +19,26 @@
   box-sizing: border-box;
 }
 
+body {
+  margin:33px;
+}
+.top-head {
+  margin-left:30px;
+}
 
 .bookers {
   font-weight:bold;
 }
+
+.top-main {
+  margin :50px;
+}
+
+.start {
+  color: gray;
+}
+
+.table-head {
+  padding-bottom:5px;
+}
+
