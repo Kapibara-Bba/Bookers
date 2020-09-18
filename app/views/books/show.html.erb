@@ -1,3 +1,9 @@
+<% if flash[:create] %>
+  <p><%= flash[:create] %></p>
+<% end %>
+<% if flash[:update] %>
+  <p><%= flash[:update] %></p>
+<% end 
 <p class="show-title">
 <b>Title:</b><%= @book.title %>
 </p>
