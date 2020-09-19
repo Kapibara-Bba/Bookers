@@ -46,7 +46,7 @@ a:hover {
 }
 
 .start {
-  color: gray;
+  color:#666;
 }
 
 table {
@@ -90,6 +90,10 @@ b {
   margin-bottom:10px;
 }
 
-flash {
+.massege {
   color:green;
+}
+
+.tbody {
+  color:#333;
 }

@@ -1,8 +1,8 @@
 <% if flash[:create] %>
-  <p><%= flash[:create] %></p>
+  <div class="massege"><p><%= flash[:create] %></p></div>
 <% end %>
 <% if flash[:update] %>
-  <p><%= flash[:update] %></p>
+  <div class="massege"><p><%= flash[:update] %></p></div>
 <% end %>
 <p class="show-title">
 <b>Title:</b><%= @book.title %>
